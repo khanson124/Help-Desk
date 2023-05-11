@@ -1,0 +1,6 @@
+D:\Users\khans\source\repos\LibraryHelpDesk\bin\Debug\LibraryHelpDesk.dll
+D:\Users\khans\source\repos\LibraryHelpDesk\bin\Debug\LibraryHelpDesk.pdb
+D:\Users\khans\source\repos\LibraryHelpDesk\obj\Debug\LibraryHelpDesk.csproj.AssemblyReference.cache
+D:\Users\khans\source\repos\LibraryHelpDesk\obj\Debug\LibraryHelpDesk.csproj.CoreCompileInputs.cache
+D:\Users\khans\source\repos\LibraryHelpDesk\obj\Debug\LibraryHelpDesk.dll
+D:\Users\khans\source\repos\LibraryHelpDesk\obj\Debug\LibraryHelpDesk.pdb
