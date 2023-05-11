@@ -1,0 +1,49 @@
+D:\Users\khans\source\repos\Help Desk\obj\Debug\Help Desk.csproj.AssemblyReference.cache
+D:\Users\khans\source\repos\Help Desk\obj\Debug\Help Desk.csproj.SuggestedBindingRedirects.cache
+D:\Users\khans\source\repos\Help Desk\obj\Debug\Help_Desk.Dashboard.resources
+D:\Users\khans\source\repos\Help Desk\obj\Debug\Help_Desk.FrmFileTicket.resources
+D:\Users\khans\source\repos\Help Desk\obj\Debug\Help_Desk.FrmKnowledgeBase.resources
+D:\Users\khans\source\repos\Help Desk\obj\Debug\Help_Desk.Login.resources
+D:\Users\khans\source\repos\Help Desk\obj\Debug\Help_Desk.MainContainer.resources
+D:\Users\khans\source\repos\Help Desk\obj\Debug\Help_Desk.Properties.Resources.resources
+D:\Users\khans\source\repos\Help Desk\obj\Debug\Help_Desk.Settings.resources
+D:\Users\khans\source\repos\Help Desk\obj\Debug\Help_Desk.UserForm.resources
+D:\Users\khans\source\repos\Help Desk\obj\Debug\Help Desk.csproj.GenerateResource.cache
+D:\Users\khans\source\repos\Help Desk\obj\Debug\Help Desk.csproj.CoreCompileInputs.cache
+D:\Users\khans\source\repos\Help Desk\bin\Debug\Help Desk.exe.config
+D:\Users\khans\source\repos\Help Desk\bin\Debug\Help Desk.exe
+D:\Users\khans\source\repos\Help Desk\bin\Debug\Help Desk.pdb
+D:\Users\khans\source\repos\Help Desk\bin\Debug\HelpDeskLibrary.dll
+D:\Users\khans\source\repos\Help Desk\bin\Debug\System.Composition.Runtime.dll
+D:\Users\khans\source\repos\Help Desk\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Users\khans\source\repos\Help Desk\bin\Debug\HelpDeskLibrary.pdb
+D:\Users\khans\source\repos\Help Desk\obj\Debug\Help Desk.csproj.CopyComplete
+D:\Users\khans\source\repos\Help Desk\obj\Debug\Help Desk.exe
+D:\Users\khans\source\repos\Help Desk\obj\Debug\Help Desk.pdb
+D:\Users\khans\source\repos\Help Desk\obj\Debug\Help_Desk.TicketsView.resources
+D:\Users\khans\source\repos\Help Desk\bin\Debug\LibraryHelpDesk.dll
+D:\Users\khans\source\repos\Help Desk\bin\Debug\LibraryHelpDesk.pdb
+\\Mac\iCloud\Help Desk\bin\Debug\Help Desk.exe.config
+\\Mac\iCloud\Help Desk\bin\Debug\Help Desk.exe
+\\Mac\iCloud\Help Desk\bin\Debug\Help Desk.pdb
+\\Mac\iCloud\Help Desk\bin\Debug\LibraryHelpDesk.dll
+\\Mac\iCloud\Help Desk\bin\Debug\System.Composition.Runtime.dll
+\\Mac\iCloud\Help Desk\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+\\Mac\iCloud\Help Desk\bin\Debug\HelpDeskLibrary.pdb
+\\Mac\iCloud\Help Desk\bin\Debug\LibraryHelpDesk.pdb
+\\Mac\iCloud\Help Desk\obj\Debug\Help Desk.csproj.AssemblyReference.cache
+\\Mac\iCloud\Help Desk\obj\Debug\Help Desk.csproj.SuggestedBindingRedirects.cache
+\\Mac\iCloud\Help Desk\obj\Debug\Help_Desk.Dashboard.resources
+\\Mac\iCloud\Help Desk\obj\Debug\Help_Desk.FrmFileTicket.resources
+\\Mac\iCloud\Help Desk\obj\Debug\Help_Desk.FrmKnowledgeBase.resources
+\\Mac\iCloud\Help Desk\obj\Debug\Help_Desk.Login.resources
+\\Mac\iCloud\Help Desk\obj\Debug\Help_Desk.MainContainer.resources
+\\Mac\iCloud\Help Desk\obj\Debug\Help_Desk.Properties.Resources.resources
+\\Mac\iCloud\Help Desk\obj\Debug\Help_Desk.Settings.resources
+\\Mac\iCloud\Help Desk\obj\Debug\Help_Desk.TicketsView.resources
+\\Mac\iCloud\Help Desk\obj\Debug\Help_Desk.UserForm.resources
+\\Mac\iCloud\Help Desk\obj\Debug\Help Desk.csproj.GenerateResource.cache
+\\Mac\iCloud\Help Desk\obj\Debug\Help Desk.csproj.CoreCompileInputs.cache
+\\Mac\iCloud\Help Desk\obj\Debug\Help Desk.csproj.CopyComplete
+\\Mac\iCloud\Help Desk\obj\Debug\Help Desk.exe
+\\Mac\iCloud\Help Desk\obj\Debug\Help Desk.pdb

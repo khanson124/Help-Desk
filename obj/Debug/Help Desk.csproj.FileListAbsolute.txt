@@ -1,0 +1,28 @@
+D:\Users\khans\source\repos\Help Desk\obj\Debug\Help_Desk.FrmFileTicket.resources
+D:\Users\khans\source\repos\Help Desk\obj\Debug\Help_Desk.FrmKnowledgeBase.resources
+D:\Users\khans\source\repos\Help Desk\obj\Debug\Help_Desk.Login.resources
+D:\Users\khans\source\repos\Help Desk\obj\Debug\Help_Desk.MainContainer.resources
+D:\Users\khans\source\repos\Help Desk\obj\Debug\Help_Desk.Properties.Resources.resources
+D:\Users\khans\source\repos\Help Desk\obj\Debug\Help_Desk.Settings.resources
+D:\Users\khans\source\repos\Help Desk\obj\Debug\Help Desk.csproj.GenerateResource.cache
+D:\Users\khans\source\repos\Help Desk\bin\Debug\Help Desk.exe.config
+D:\Users\khans\source\repos\Help Desk\bin\Debug\Help Desk.exe
+D:\Users\khans\source\repos\Help Desk\bin\Debug\Help Desk.pdb
+D:\Users\khans\source\repos\Help Desk\bin\Debug\HelpDeskLibrary.dll
+D:\Users\khans\source\repos\Help Desk\bin\Debug\HelpDeskLibrary.pdb
+D:\Users\khans\source\repos\Help Desk\obj\Debug\Help Desk.csproj.CopyComplete
+D:\Users\khans\source\repos\Help Desk\obj\Debug\Help Desk.exe
+D:\Users\khans\source\repos\Help Desk\obj\Debug\Help Desk.pdb
+D:\Users\khans\source\repos\Help Desk\obj\Debug\Help_Desk.TicketsView.resources
+D:\Users\khans\source\repos\Help Desk\bin\Debug\LibraryHelpDesk.dll
+D:\Users\khans\source\repos\Help Desk\bin\Debug\LibraryHelpDesk.pdb
+D:\Users\khans\source\repos\Help Desk\obj\Debug\Help_Desk.NewKBFrm.resources
+D:\Users\khans\source\repos\Help Desk\obj\Debug\Help_Desk.AdminDashboard.resources
+D:\Users\khans\source\repos\Help Desk\obj\Debug\Help_Desk.FrmCreateUserAdmin.resources
+D:\Users\khans\source\repos\Help Desk\bin\Debug\System.Composition.Runtime.dll
+D:\Users\khans\source\repos\Help Desk\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Users\khans\source\repos\Help Desk\obj\Debug\Help Desk.csproj.AssemblyReference.cache
+D:\Users\khans\source\repos\Help Desk\obj\Debug\Help Desk.csproj.SuggestedBindingRedirects.cache
+D:\Users\khans\source\repos\Help Desk\obj\Debug\Help Desk.csproj.CoreCompileInputs.cache
+D:\Users\khans\source\repos\Help Desk\obj\Debug\Help_Desk.AgentDashboard.resources
+D:\Users\khans\source\repos\Help Desk\obj\Debug\Help_Desk.UserProfile.resources
