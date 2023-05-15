@@ -105,6 +105,57 @@ namespace LibraryHelpDesk
             }
         }
 
+        public class User
+        {
+            public string Name { get; set; }
+            public string Email { get; set; }
+            public string Password { get; set; }
+            public string Role { get; internal set; }
+            public object Id { get; internal set; }
+        }
+
+
+        public class UserManager
+        {
+            private List<User> users;
+
+            public UserManager()
+            {
+                users = new List<User>();
+            }
+
+            public void AddUser(User user)
+            {
+                users.Add(user);
+            }
+
+            public void UpdateUser(User user)
+            {
+                // Find the user by email address and update the properties
+                var existingUser = users.FirstOrDefault(u => u.Email == user.Email);
+                if (existingUser != null)
+                {
+                    existingUser.Name = user.Name;
+                    existingUser.Password = user.Password;
+                }
+            }
+
+            public void DeleteUser(string email)
+            {
+                // Find the user by email address and remove it from the list
+                var user = users.FirstOrDefault(u => u.Email == email);
+                if (user != null)
+                {
+                    users.Remove(user);
+                }
+            }
+
+            public List<User> GetUsers()
+            {
+                return users;
+            }
+        }
+
 
         public static int GetNextSupportAgentId()
         {
