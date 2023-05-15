@@ -37,7 +37,7 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.btnKnowlegeBase = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnKBLogout = new System.Windows.Forms.Button();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.btnLogout = new System.Windows.Forms.Button();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -58,7 +58,7 @@
             this.lblCategory = new System.Windows.Forms.Label();
             this.pnlOptions = new System.Windows.Forms.Panel();
             this.txtDescription = new System.Windows.Forms.TextBox();
-            this.lblIncident = new System.Windows.Forms.Label();
+            this.lblNewKB = new System.Windows.Forms.Label();
             this.btnProfilePic = new System.Windows.Forms.Button();
             this.btnMessages = new System.Windows.Forms.Button();
             this.btnAlert = new System.Windows.Forms.Button();
@@ -163,19 +163,20 @@
             this.pictureBox4.TabIndex = 15;
             this.pictureBox4.TabStop = false;
             // 
-            // button1
+            // btnKBLogout
             // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.Location = new System.Drawing.Point(38, 313);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(97, 32);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "Logout";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnKBLogout.FlatAppearance.BorderSize = 0;
+            this.btnKBLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnKBLogout.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnKBLogout.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnKBLogout.Location = new System.Drawing.Point(38, 313);
+            this.btnKBLogout.Name = "btnKBLogout";
+            this.btnKBLogout.Size = new System.Drawing.Size(97, 32);
+            this.btnKBLogout.TabIndex = 16;
+            this.btnKBLogout.Text = "Logout";
+            this.btnKBLogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnKBLogout.UseVisualStyleBackColor = true;
+            this.btnKBLogout.Click += new System.EventHandler(this.btnKBLogout_Click);
             // 
             // pictureBox7
             // 
@@ -323,6 +324,7 @@
             this.btnHome.Text = "Home";
             this.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHome.UseVisualStyleBackColor = true;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // lblContent
             // 
@@ -378,7 +380,7 @@
             this.pnlOptions.Controls.Add(this.pictureBox5);
             this.pnlOptions.Controls.Add(this.btnKnowlegeBase);
             this.pnlOptions.Controls.Add(this.pictureBox4);
-            this.pnlOptions.Controls.Add(this.button1);
+            this.pnlOptions.Controls.Add(this.btnKBLogout);
             this.pnlOptions.Controls.Add(this.pictureBox7);
             this.pnlOptions.Controls.Add(this.btnLogout);
             this.pnlOptions.Controls.Add(this.pictureBox6);
@@ -405,16 +407,16 @@
             this.txtDescription.Size = new System.Drawing.Size(332, 77);
             this.txtDescription.TabIndex = 24;
             // 
-            // lblIncident
+            // lblNewKB
             // 
-            this.lblIncident.AutoSize = true;
-            this.lblIncident.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIncident.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblIncident.Location = new System.Drawing.Point(3, 9);
-            this.lblIncident.Name = "lblIncident";
-            this.lblIncident.Size = new System.Drawing.Size(98, 25);
-            this.lblIncident.TabIndex = 0;
-            this.lblIncident.Text = "File Ticket";
+            this.lblNewKB.AutoSize = true;
+            this.lblNewKB.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNewKB.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblNewKB.Location = new System.Drawing.Point(3, 9);
+            this.lblNewKB.Name = "lblNewKB";
+            this.lblNewKB.Size = new System.Drawing.Size(79, 25);
+            this.lblNewKB.TabIndex = 0;
+            this.lblNewKB.Text = "New KB";
             // 
             // btnProfilePic
             // 
@@ -458,7 +460,7 @@
             this.pnlHeading.Controls.Add(this.btnAlert);
             this.pnlHeading.Controls.Add(this.btnMessages);
             this.pnlHeading.Controls.Add(this.btnProfilePic);
-            this.pnlHeading.Controls.Add(this.lblIncident);
+            this.pnlHeading.Controls.Add(this.lblNewKB);
             this.pnlHeading.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlHeading.Location = new System.Drawing.Point(0, 0);
             this.pnlHeading.Name = "pnlHeading";
@@ -534,7 +536,7 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Button btnKnowlegeBase;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnKBLogout;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.PictureBox pictureBox6;
@@ -555,7 +557,7 @@
         private System.Windows.Forms.Label lblCategory;
         private System.Windows.Forms.Panel pnlOptions;
         private System.Windows.Forms.TextBox txtDescription;
-        private System.Windows.Forms.Label lblIncident;
+        private System.Windows.Forms.Label lblNewKB;
         private System.Windows.Forms.Button btnProfilePic;
         private System.Windows.Forms.Button btnMessages;
         private System.Windows.Forms.Button btnAlert;

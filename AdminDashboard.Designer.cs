@@ -38,21 +38,18 @@
             this.label10 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.SolvedTicket = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.OpenTicket = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.panel10 = new System.Windows.Forms.Panel();
+            this.pnlClosed = new System.Windows.Forms.Panel();
+            this.lblSolvedTicket = new System.Windows.Forms.Label();
+            this.lblClosed = new System.Windows.Forms.Label();
+            this.pnlOpen = new System.Windows.Forms.Panel();
+            this.txtOpenTicket = new System.Windows.Forms.Label();
+            this.lblPending = new System.Windows.Forms.Label();
+            this.pnlEscalated = new System.Windows.Forms.Panel();
             this.EscalatedTicket = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lblEscalated = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.UnassignTicket = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
+            this.pnlActiveUsers = new System.Windows.Forms.Panel();
+            this.lblActiveUsers = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnAlert = new System.Windows.Forms.Button();
             this.btnMain = new System.Windows.Forms.Button();
@@ -104,12 +101,11 @@
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel9.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panel10.SuspendLayout();
+            this.pnlClosed.SuspendLayout();
+            this.pnlOpen.SuspendLayout();
+            this.pnlEscalated.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
+            this.pnlActiveUsers.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -239,80 +235,82 @@
             this.label9.TabIndex = 5;
             this.label9.Text = "Top Worker by Solved Ticket";
             // 
-            // panel5
+            // pnlClosed
             // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(162)))), ((int)(((byte)(174)))));
-            this.panel5.Controls.Add(this.SolvedTicket);
-            this.panel5.Controls.Add(this.label6);
-            this.panel5.Cursor = System.Windows.Forms.Cursors.Default;
-            this.panel5.Location = new System.Drawing.Point(164, 123);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(100, 60);
-            this.panel5.TabIndex = 10;
+            this.pnlClosed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(162)))), ((int)(((byte)(174)))));
+            this.pnlClosed.Controls.Add(this.lblSolvedTicket);
+            this.pnlClosed.Controls.Add(this.lblClosed);
+            this.pnlClosed.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pnlClosed.Location = new System.Drawing.Point(164, 123);
+            this.pnlClosed.Name = "pnlClosed";
+            this.pnlClosed.Size = new System.Drawing.Size(100, 60);
+            this.pnlClosed.TabIndex = 10;
             // 
-            // SolvedTicket
+            // lblSolvedTicket
             // 
-            this.SolvedTicket.AutoSize = true;
-            this.SolvedTicket.Cursor = System.Windows.Forms.Cursors.Default;
-            this.SolvedTicket.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SolvedTicket.Location = new System.Drawing.Point(40, 30);
-            this.SolvedTicket.Name = "SolvedTicket";
-            this.SolvedTicket.Size = new System.Drawing.Size(14, 13);
-            this.SolvedTicket.TabIndex = 3;
-            this.SolvedTicket.Text = "0";
+            this.lblSolvedTicket.AutoSize = true;
+            this.lblSolvedTicket.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lblSolvedTicket.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSolvedTicket.Location = new System.Drawing.Point(40, 30);
+            this.lblSolvedTicket.Name = "lblSolvedTicket";
+            this.lblSolvedTicket.Size = new System.Drawing.Size(14, 13);
+            this.lblSolvedTicket.TabIndex = 3;
+            this.lblSolvedTicket.Text = "0";
+         
             // 
-            // label6
+            // lblClosed
             // 
-            this.label6.AutoSize = true;
-            this.label6.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label6.Location = new System.Drawing.Point(30, 4);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(40, 13);
-            this.label6.TabIndex = 2;
-            this.label6.Text = "Solved";
+            this.lblClosed.AutoSize = true;
+            this.lblClosed.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lblClosed.Location = new System.Drawing.Point(30, 4);
+            this.lblClosed.Name = "lblClosed";
+            this.lblClosed.Size = new System.Drawing.Size(40, 13);
+            this.lblClosed.TabIndex = 2;
+            this.lblClosed.Text = "Solved";
             // 
-            // panel6
+            // pnlOpen
             // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(162)))), ((int)(((byte)(174)))));
-            this.panel6.Controls.Add(this.OpenTicket);
-            this.panel6.Controls.Add(this.label5);
-            this.panel6.Cursor = System.Windows.Forms.Cursors.Default;
-            this.panel6.Location = new System.Drawing.Point(270, 57);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(100, 60);
-            this.panel6.TabIndex = 12;
+            this.pnlOpen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(162)))), ((int)(((byte)(174)))));
+            this.pnlOpen.Controls.Add(this.txtOpenTicket);
+            this.pnlOpen.Controls.Add(this.lblPending);
+            this.pnlOpen.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pnlOpen.Location = new System.Drawing.Point(164, 57);
+            this.pnlOpen.Name = "pnlOpen";
+            this.pnlOpen.Size = new System.Drawing.Size(206, 60);
+            this.pnlOpen.TabIndex = 12;
             // 
-            // OpenTicket
+            // txtOpenTicket
             // 
-            this.OpenTicket.AutoSize = true;
-            this.OpenTicket.Cursor = System.Windows.Forms.Cursors.Default;
-            this.OpenTicket.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OpenTicket.Location = new System.Drawing.Point(40, 30);
-            this.OpenTicket.Name = "OpenTicket";
-            this.OpenTicket.Size = new System.Drawing.Size(14, 13);
-            this.OpenTicket.TabIndex = 2;
-            this.OpenTicket.Text = "0";
+            this.txtOpenTicket.AutoSize = true;
+            this.txtOpenTicket.Cursor = System.Windows.Forms.Cursors.Default;
+            this.txtOpenTicket.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtOpenTicket.Location = new System.Drawing.Point(86, 29);
+            this.txtOpenTicket.Name = "txtOpenTicket";
+            this.txtOpenTicket.Size = new System.Drawing.Size(14, 13);
+            this.txtOpenTicket.TabIndex = 2;
+            this.txtOpenTicket.Text = "0";
+         
             // 
-            // label5
+            // lblPending
             // 
-            this.label5.AutoSize = true;
-            this.label5.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label5.Location = new System.Drawing.Point(31, 4);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(33, 13);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "Open";
+            this.lblPending.AutoSize = true;
+            this.lblPending.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lblPending.Location = new System.Drawing.Point(86, 4);
+            this.lblPending.Name = "lblPending";
+            this.lblPending.Size = new System.Drawing.Size(33, 13);
+            this.lblPending.TabIndex = 1;
+            this.lblPending.Text = "Open";
             // 
-            // panel10
+            // pnlEscalated
             // 
-            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(162)))), ((int)(((byte)(174)))));
-            this.panel10.Controls.Add(this.EscalatedTicket);
-            this.panel10.Controls.Add(this.label7);
-            this.panel10.Cursor = System.Windows.Forms.Cursors.Default;
-            this.panel10.Location = new System.Drawing.Point(270, 123);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(100, 60);
-            this.panel10.TabIndex = 14;
+            this.pnlEscalated.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(162)))), ((int)(((byte)(174)))));
+            this.pnlEscalated.Controls.Add(this.EscalatedTicket);
+            this.pnlEscalated.Controls.Add(this.lblEscalated);
+            this.pnlEscalated.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pnlEscalated.Location = new System.Drawing.Point(270, 123);
+            this.pnlEscalated.Name = "pnlEscalated";
+            this.pnlEscalated.Size = new System.Drawing.Size(100, 60);
+            this.pnlEscalated.TabIndex = 14;
             // 
             // EscalatedTicket
             // 
@@ -325,15 +323,15 @@
             this.EscalatedTicket.TabIndex = 4;
             this.EscalatedTicket.Text = "0";
             // 
-            // label7
+            // lblEscalated
             // 
-            this.label7.AutoSize = true;
-            this.label7.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label7.Location = new System.Drawing.Point(23, 4);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(54, 13);
-            this.label7.TabIndex = 3;
-            this.label7.Text = "Escalated";
+            this.lblEscalated.AutoSize = true;
+            this.lblEscalated.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lblEscalated.Location = new System.Drawing.Point(23, 4);
+            this.lblEscalated.Name = "lblEscalated";
+            this.lblEscalated.Size = new System.Drawing.Size(54, 13);
+            this.lblEscalated.TabIndex = 3;
+            this.lblEscalated.Text = "Escalated";
             // 
             // pictureBox4
             // 
@@ -346,59 +344,27 @@
             this.pictureBox4.TabIndex = 4;
             this.pictureBox4.TabStop = false;
             // 
-            // panel3
+            // pnlActiveUsers
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(162)))), ((int)(((byte)(174)))));
-            this.panel3.Controls.Add(this.UnassignTicket);
-            this.panel3.Controls.Add(this.label4);
-            this.panel3.Cursor = System.Windows.Forms.Cursors.Default;
-            this.panel3.Location = new System.Drawing.Point(164, 57);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(100, 60);
-            this.panel3.TabIndex = 8;
+            this.pnlActiveUsers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(182)))), ((int)(((byte)(110)))));
+            this.pnlActiveUsers.Controls.Add(this.ActiveUser);
+            this.pnlActiveUsers.Controls.Add(this.pictureBox4);
+            this.pnlActiveUsers.Controls.Add(this.lblActiveUsers);
+            this.pnlActiveUsers.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pnlActiveUsers.Location = new System.Drawing.Point(386, 57);
+            this.pnlActiveUsers.Name = "pnlActiveUsers";
+            this.pnlActiveUsers.Size = new System.Drawing.Size(157, 126);
+            this.pnlActiveUsers.TabIndex = 11;
             // 
-            // UnassignTicket
+            // lblActiveUsers
             // 
-            this.UnassignTicket.AutoSize = true;
-            this.UnassignTicket.Cursor = System.Windows.Forms.Cursors.Default;
-            this.UnassignTicket.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UnassignTicket.Location = new System.Drawing.Point(40, 30);
-            this.UnassignTicket.Name = "UnassignTicket";
-            this.UnassignTicket.Size = new System.Drawing.Size(14, 13);
-            this.UnassignTicket.TabIndex = 1;
-            this.UnassignTicket.Text = "0";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label4.Location = new System.Drawing.Point(19, 4);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(63, 13);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Unassigned";
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(182)))), ((int)(((byte)(110)))));
-            this.panel4.Controls.Add(this.ActiveUser);
-            this.panel4.Controls.Add(this.pictureBox4);
-            this.panel4.Controls.Add(this.label8);
-            this.panel4.Cursor = System.Windows.Forms.Cursors.Default;
-            this.panel4.Location = new System.Drawing.Point(386, 57);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(157, 126);
-            this.panel4.TabIndex = 11;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label8.Location = new System.Drawing.Point(49, 4);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(67, 13);
-            this.label8.TabIndex = 4;
-            this.label8.Text = "Active Users";
+            this.lblActiveUsers.AutoSize = true;
+            this.lblActiveUsers.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lblActiveUsers.Location = new System.Drawing.Point(49, 4);
+            this.lblActiveUsers.Name = "lblActiveUsers";
+            this.lblActiveUsers.Size = new System.Drawing.Size(67, 13);
+            this.lblActiveUsers.TabIndex = 4;
+            this.lblActiveUsers.Text = "Active Users";
             // 
             // panel1
             // 
@@ -1081,28 +1047,25 @@
             this.Controls.Add(this.pictureBoxHome);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel9);
-            this.Controls.Add(this.panel5);
-            this.Controls.Add(this.panel6);
-            this.Controls.Add(this.panel10);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.pnlClosed);
+            this.Controls.Add(this.pnlOpen);
+            this.Controls.Add(this.pnlEscalated);
+            this.Controls.Add(this.pnlActiveUsers);
             this.Name = "AdminDashboard";
             this.Text = "Dashboard";
             this.panel7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
-            this.panel10.ResumeLayout(false);
-            this.panel10.PerformLayout();
+            this.pnlClosed.ResumeLayout(false);
+            this.pnlClosed.PerformLayout();
+            this.pnlOpen.ResumeLayout(false);
+            this.pnlOpen.PerformLayout();
+            this.pnlEscalated.ResumeLayout(false);
+            this.pnlEscalated.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
+            this.pnlActiveUsers.ResumeLayout(false);
+            this.pnlActiveUsers.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -1142,21 +1105,18 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Label SolvedTicket;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Label OpenTicket;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Panel pnlClosed;
+        private System.Windows.Forms.Label lblSolvedTicket;
+        private System.Windows.Forms.Label lblClosed;
+        private System.Windows.Forms.Panel pnlOpen;
+        private System.Windows.Forms.Label txtOpenTicket;
+        private System.Windows.Forms.Label lblPending;
+        private System.Windows.Forms.Panel pnlEscalated;
         private System.Windows.Forms.Label EscalatedTicket;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblEscalated;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label UnassignTicket;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Panel pnlActiveUsers;
+        private System.Windows.Forms.Label lblActiveUsers;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnAlert;
         private System.Windows.Forms.Button btnProfilePic;

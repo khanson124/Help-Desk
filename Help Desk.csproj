@@ -93,6 +93,18 @@
     <Compile Include="AdminDashboard.Designer.cs">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="AgentTicketView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgentTicketView.Designer.cs">
+      <DependentUpon>AgentTicketView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAgentFileTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAgentFileTicket.Designer.cs">
+      <DependentUpon>FrmAgentFileTicket.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmFileTicket.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,18 +142,24 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Settings.cs">
+    <Compile Include="SupportDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Settings.Designer.cs">
-      <DependentUpon>Settings.cs</DependentUpon>
+    <Compile Include="SupportDashboard.Designer.cs">
+      <DependentUpon>SupportDashboard.cs</DependentUpon>
     </Compile>
     <Compile Include="Ticket.cs" />
-    <Compile Include="TicketsView.cs">
+    <Compile Include="AdminTicketsView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TicketsView.Designer.cs">
-      <DependentUpon>TicketsView.cs</DependentUpon>
+    <Compile Include="AdminTicketsView.Designer.cs">
+      <DependentUpon>AdminTicketsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TicketHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TicketHistory.Designer.cs">
+      <DependentUpon>TicketHistory.cs</DependentUpon>
     </Compile>
     <Compile Include="User.cs" />
     <Compile Include="AgentDashboard.cs">
@@ -165,6 +183,13 @@
     </Compile>
     <EmbeddedResource Include="AdminDashboard.resx">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgentTicketView.resx">
+      <DependentUpon>AgentTicketView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAgentFileTicket.resx">
+      <DependentUpon>FrmAgentFileTicket.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmFileTicket.resx">
       <DependentUpon>FrmFileTicket.cs</DependentUpon>
@@ -191,17 +216,20 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Settings.resx">
-      <DependentUpon>Settings.cs</DependentUpon>
+    <EmbeddedResource Include="SupportDashboard.resx">
+      <DependentUpon>SupportDashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TicketsView.resx">
-      <DependentUpon>TicketsView.cs</DependentUpon>
+    <EmbeddedResource Include="AdminTicketsView.resx">
+      <DependentUpon>AdminTicketsView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AgentDashboard.resx">
       <DependentUpon>AgentDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCreateUser.resx">
       <DependentUpon>FrmCreateUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TicketHistory.resx">
+      <DependentUpon>TicketHistory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserProfile.resx">
       <DependentUpon>UserProfile.cs</DependentUpon>

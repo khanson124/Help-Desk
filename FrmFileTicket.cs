@@ -16,6 +16,7 @@ namespace Help_Desk
     public partial class FrmFileTicket : Form
     {
         public int CurrentUserID { get; set; }
+        public string CurrentUserRole { get; set; }
         public FrmFileTicket()
         {
             InitializeComponent();
@@ -88,9 +89,7 @@ namespace Help_Desk
 
         private void btnTicket_Click_1(object sender, EventArgs e)
         {
-            /*TicketsView frmTicket = new TicketsView();
-            this.MdiParent = this.MdiParent;*/
-            TicketsView frmTicket = new TicketsView((MainContainer)this.MdiParent);
+            AdminTicketsView frmTicket = new AdminTicketsView((MainContainer)this.MdiParent, this.CurrentUserID, this.CurrentUserRole);
             this.MdiParent = this.MdiParent;
             frmTicket.Show();
         }
@@ -187,7 +186,7 @@ namespace Help_Desk
                     cmd.Parameters.AddWithValue("@priority", priority.ToString());
                     cmd.Parameters.AddWithValue("@agent_id", agentId);
                     cmd.Parameters.AddWithValue("@status", status.ToString());
-                    cmd.Parameters.AddWithValue("@user_id", 1);
+                    cmd.Parameters.AddWithValue("@user_id", CurrentUserID);
                     cmd.Parameters.AddWithValue("@date_created", ticket.Created);
                     cmd.Parameters.AddWithValue("@date_updated", ticket.DueDate);
                     cmd.Parameters.AddWithValue("@category_id", category_id);

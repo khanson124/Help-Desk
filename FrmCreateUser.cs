@@ -8,9 +8,10 @@ namespace Help_Desk
     {
         public int CurrentUserID { get; set; }
         private MainContainer mainContainer;
-        public FrmCreateUserAdmin()
+        public FrmCreateUserAdmin(MainContainer mainContainer)
         {
             InitializeComponent();
+            this.mainContainer = mainContainer;
         }
 
         private void label1_Click(object sender, EventArgs e)

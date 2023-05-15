@@ -56,5 +56,10 @@ namespace Help_Desk
         {
 
         }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -34,8 +34,10 @@ namespace Help_Desk
         {
             string username = txtUsername.Text.Trim();
             string password = txtPassword.Text;
-            int userID = ValidateUserAndGetID(txtUsername.Text, txtPassword.Text);
-            
+            //int userID = ValidateUserAndGetID(txtUsername.Text, txtPassword.Text);
+            (int userID, string role) = ValidateUserAndGetIDAndRole(username, password);
+
+
 
             if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
             {
@@ -71,9 +73,10 @@ namespace Help_Desk
                                 {
                                     MessageBox.Show("Login successful.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                                    AdminDashboard frmAdmin = new AdminDashboard(frmMain); // Add the parameter here
+                                    AdminDashboard frmAdmin = new AdminDashboard(frmMain);
                                     frmAdmin.CurrentUserID = userID;
                                     frmMain.ShowFormInPanel(frmAdmin);
+                                    AdminTicketsView ticketsView = new AdminTicketsView(frmMain, userID, role); // Pass userID here
                                     this.Hide();
                                     frmMain.ShowDialog();
                                 }
@@ -84,9 +87,25 @@ namespace Help_Desk
                                     AgentDashboard frmAgent = new AgentDashboard(frmMain);
                                     frmAgent.CurrentUserID = userID;
                                     frmMain.ShowFormInPanel(frmAgent);
+                                    AdminTicketsView ticketsView = new AdminTicketsView(frmMain, userID, userRole);
+                                    this.Hide();
+                                    frmMain.ShowDialog();
+
+
+                                }
+                                else if (userRole == "support")
+                                {
+                                    MessageBox.Show("Login successful.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                                    SupportDashboard frmSupport = new SupportDashboard(frmMain);
+                                    frmSupport.CurrentUserID = userID;
+                                    frmMain.ShowFormInPanel(frmSupport);
+                                    AdminTicketsView ticketsView = new AdminTicketsView(frmMain, userID, role); // Pass userID here
+
                                     this.Hide();
                                     frmMain.ShowDialog();
                                 }
+
                                 else
                                 {
                                     MessageBox.Show("Invalid username or password. Please try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -103,7 +122,8 @@ namespace Help_Desk
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("An error occurred: " + ex.StackTrace + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    System.Diagnostics.Debug.WriteLine(ex.StackTrace);
                 }
                 finally
                 {
@@ -130,7 +150,7 @@ namespace Help_Desk
         {
 
         }
-        private int ValidateUserAndGetID(string username, string password)
+        /*private int ValidateUserAndGetID(string username, string password)
         {
             int userID = -1; // Initialize the user ID to an invalid value
 
@@ -155,8 +175,78 @@ namespace Help_Desk
                 }
             }
 
-            return userID;
+           return userID;
+        }*/
+        private (int, string) ValidateUserAndGetIDAndRole(string username, string password)
+        {
+            int userID = -1; // Initialize the user ID to an invalid value
+            string role = null; // Initialize the role to null
+
+            string connectionString = "Data Source=.\\SQLEXPRESS;Initial Catalog=HELPDESK;Integrated Security=True";
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+                string sql = "SELECT user_id, role FROM users WHERE email = @email AND password = @password";
+
+                using (SqlCommand cmd = new SqlCommand(sql, connection))
+                {
+                    cmd.Parameters.AddWithValue("@email", username);
+                    cmd.Parameters.AddWithValue("@password", password);
+
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            userID = reader.GetInt32(0);  // The first column is the user ID
+                            role = reader.GetString(1);   // The second column is the role
+                        }
+                    }
+                }
+            }
+
+            return (userID, role);
         }
+
+
+
+
+        private User ValidateUserAndGetUser(string username, string password)
+        {
+            User user = null; // Initialize the user object to null
+
+            string connectionString = "Data Source=.\\SQLEXPRESS;Initial Catalog=HELPDESK;Integrated Security=True";
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+                string sql = "SELECT user_id, role FROM users WHERE email = @email AND password = @password";
+
+                using (SqlCommand cmd = new SqlCommand(sql, connection))
+                {
+                    cmd.Parameters.AddWithValue("@email", username);
+                    cmd.Parameters.AddWithValue("@password", password);
+
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            int userId = reader.GetInt32(0);
+                            string role = reader.GetString(1);
+
+                            user = new User
+                            {
+                                Id = userId,
+                                Role = role
+                            };
+                        }
+                    }
+                }
+            }
+
+            return user;
+        }
+
 
     }
 }

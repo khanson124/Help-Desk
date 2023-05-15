@@ -150,6 +150,23 @@ namespace Help_Desk
                 }
             }
         }
+
+        private void btnKBLogout_Click(object sender, EventArgs e)
+        {
+            MainContainer mainContainer = (MainContainer)this.ParentForm;
+
+            mainContainer.Close();
+
+            this.Close();
+
+            Login login = new Login();
+            login.Show();
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
     

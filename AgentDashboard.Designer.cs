@@ -34,8 +34,8 @@
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.btnDashboardTicket = new System.Windows.Forms.Button();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
+            this.btnAgentLogout = new System.Windows.Forms.Button();
+            this.btnAgentHome = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.button5 = new System.Windows.Forms.Button();
@@ -61,15 +61,15 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label10 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.SolvedTicket = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lblSolvedTicket = new System.Windows.Forms.Label();
+            this.lblClosed = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnProfilePic = new System.Windows.Forms.Button();
-            this.OpenTicket = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lblOpenTicket = new System.Windows.Forms.Label();
+            this.lblOpen = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.EscalatedTicket = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lblEscalatedTicket = new System.Windows.Forms.Label();
+            this.lblEscalated = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -152,33 +152,35 @@
             this.pictureBox7.TabIndex = 15;
             this.pictureBox7.TabStop = false;
             // 
-            // button4
+            // btnAgentLogout
             // 
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button4.Location = new System.Drawing.Point(38, 261);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(108, 33);
-            this.button4.TabIndex = 16;
-            this.button4.Text = "Logout";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnAgentLogout.FlatAppearance.BorderSize = 0;
+            this.btnAgentLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgentLogout.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgentLogout.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnAgentLogout.Location = new System.Drawing.Point(38, 261);
+            this.btnAgentLogout.Name = "btnAgentLogout";
+            this.btnAgentLogout.Size = new System.Drawing.Size(108, 33);
+            this.btnAgentLogout.TabIndex = 16;
+            this.btnAgentLogout.Text = "Logout";
+            this.btnAgentLogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAgentLogout.UseVisualStyleBackColor = true;
+            this.btnAgentLogout.Click += new System.EventHandler(this.btnAgentLogout_Click);
             // 
-            // button8
+            // btnAgentHome
             // 
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button8.Location = new System.Drawing.Point(38, 22);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(97, 24);
-            this.button8.TabIndex = 16;
-            this.button8.Text = "Home";
-            this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.UseVisualStyleBackColor = true;
+            this.btnAgentHome.FlatAppearance.BorderSize = 0;
+            this.btnAgentHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgentHome.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgentHome.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnAgentHome.Location = new System.Drawing.Point(38, 22);
+            this.btnAgentHome.Name = "btnAgentHome";
+            this.btnAgentHome.Size = new System.Drawing.Size(97, 24);
+            this.btnAgentHome.TabIndex = 16;
+            this.btnAgentHome.Text = "Home";
+            this.btnAgentHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAgentHome.UseVisualStyleBackColor = true;
+            this.btnAgentHome.Click += new System.EventHandler(this.btnAgentHome_Click);
             // 
             // panel2
             // 
@@ -187,11 +189,11 @@
             this.panel2.Controls.Add(this.pictureBox13);
             this.panel2.Controls.Add(this.btnDashboardTicket);
             this.panel2.Controls.Add(this.pictureBox7);
-            this.panel2.Controls.Add(this.button4);
+            this.panel2.Controls.Add(this.btnAgentLogout);
             this.panel2.Controls.Add(this.pictureBox8);
             this.panel2.Controls.Add(this.button5);
             this.panel2.Controls.Add(this.pictureBox9);
-            this.panel2.Controls.Add(this.button8);
+            this.panel2.Controls.Add(this.btnAgentHome);
             this.panel2.Controls.Add(this.pictureBox12);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 53);
@@ -470,31 +472,31 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(162)))), ((int)(((byte)(174)))));
-            this.panel5.Controls.Add(this.SolvedTicket);
-            this.panel5.Controls.Add(this.label6);
+            this.panel5.Controls.Add(this.lblSolvedTicket);
+            this.panel5.Controls.Add(this.lblClosed);
             this.panel5.Location = new System.Drawing.Point(421, 75);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(100, 60);
             this.panel5.TabIndex = 32;
             // 
-            // SolvedTicket
+            // lblSolvedTicket
             // 
-            this.SolvedTicket.AutoSize = true;
-            this.SolvedTicket.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SolvedTicket.Location = new System.Drawing.Point(40, 30);
-            this.SolvedTicket.Name = "SolvedTicket";
-            this.SolvedTicket.Size = new System.Drawing.Size(14, 13);
-            this.SolvedTicket.TabIndex = 3;
-            this.SolvedTicket.Text = "0";
+            this.lblSolvedTicket.AutoSize = true;
+            this.lblSolvedTicket.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSolvedTicket.Location = new System.Drawing.Point(40, 30);
+            this.lblSolvedTicket.Name = "lblSolvedTicket";
+            this.lblSolvedTicket.Size = new System.Drawing.Size(14, 13);
+            this.lblSolvedTicket.TabIndex = 3;
+            this.lblSolvedTicket.Text = "0";
             // 
-            // label6
+            // lblClosed
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(30, 4);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(40, 13);
-            this.label6.TabIndex = 2;
-            this.label6.Text = "Solved";
+            this.lblClosed.AutoSize = true;
+            this.lblClosed.Location = new System.Drawing.Point(30, 4);
+            this.lblClosed.Name = "lblClosed";
+            this.lblClosed.Size = new System.Drawing.Size(39, 13);
+            this.lblClosed.TabIndex = 2;
+            this.lblClosed.Text = "Closed";
             // 
             // panel1
             // 
@@ -522,59 +524,60 @@
             this.btnProfilePic.UseVisualStyleBackColor = true;
             this.btnProfilePic.Click += new System.EventHandler(this.btnProfilePic_Click);
             // 
-            // OpenTicket
+            // lblOpenTicket
             // 
-            this.OpenTicket.AutoSize = true;
-            this.OpenTicket.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OpenTicket.Location = new System.Drawing.Point(40, 30);
-            this.OpenTicket.Name = "OpenTicket";
-            this.OpenTicket.Size = new System.Drawing.Size(14, 13);
-            this.OpenTicket.TabIndex = 2;
-            this.OpenTicket.Text = "0";
+            this.lblOpenTicket.AutoSize = true;
+            this.lblOpenTicket.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOpenTicket.Location = new System.Drawing.Point(40, 30);
+            this.lblOpenTicket.Name = "lblOpenTicket";
+            this.lblOpenTicket.Size = new System.Drawing.Size(14, 13);
+            this.lblOpenTicket.TabIndex = 2;
+            this.lblOpenTicket.Text = "0";
+          
             // 
-            // label5
+            // lblOpen
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(23, 4);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(33, 13);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "Open";
+            this.lblOpen.AutoSize = true;
+            this.lblOpen.Location = new System.Drawing.Point(36, 4);
+            this.lblOpen.Name = "lblOpen";
+            this.lblOpen.Size = new System.Drawing.Size(33, 13);
+            this.lblOpen.TabIndex = 1;
+            this.lblOpen.Text = "Open";
             // 
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(162)))), ((int)(((byte)(174)))));
-            this.panel10.Controls.Add(this.EscalatedTicket);
-            this.panel10.Controls.Add(this.label7);
+            this.panel10.Controls.Add(this.lblEscalatedTicket);
+            this.panel10.Controls.Add(this.lblEscalated);
             this.panel10.Location = new System.Drawing.Point(680, 75);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(100, 60);
             this.panel10.TabIndex = 36;
             // 
-            // EscalatedTicket
+            // lblEscalatedTicket
             // 
-            this.EscalatedTicket.AutoSize = true;
-            this.EscalatedTicket.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EscalatedTicket.Location = new System.Drawing.Point(40, 30);
-            this.EscalatedTicket.Name = "EscalatedTicket";
-            this.EscalatedTicket.Size = new System.Drawing.Size(14, 13);
-            this.EscalatedTicket.TabIndex = 4;
-            this.EscalatedTicket.Text = "0";
+            this.lblEscalatedTicket.AutoSize = true;
+            this.lblEscalatedTicket.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEscalatedTicket.Location = new System.Drawing.Point(40, 30);
+            this.lblEscalatedTicket.Name = "lblEscalatedTicket";
+            this.lblEscalatedTicket.Size = new System.Drawing.Size(14, 13);
+            this.lblEscalatedTicket.TabIndex = 4;
+            this.lblEscalatedTicket.Text = "0";
             // 
-            // label7
+            // lblEscalated
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(23, 4);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(54, 13);
-            this.label7.TabIndex = 3;
-            this.label7.Text = "Escalated";
+            this.lblEscalated.AutoSize = true;
+            this.lblEscalated.Location = new System.Drawing.Point(23, 4);
+            this.lblEscalated.Name = "lblEscalated";
+            this.lblEscalated.Size = new System.Drawing.Size(54, 13);
+            this.lblEscalated.TabIndex = 3;
+            this.lblEscalated.Text = "Escalated";
             // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(162)))), ((int)(((byte)(174)))));
-            this.panel6.Controls.Add(this.OpenTicket);
-            this.panel6.Controls.Add(this.label5);
+            this.panel6.Controls.Add(this.lblOpenTicket);
+            this.panel6.Controls.Add(this.lblOpen);
             this.panel6.Location = new System.Drawing.Point(183, 75);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(100, 60);
@@ -636,8 +639,8 @@
         private System.Windows.Forms.PictureBox pictureBox13;
         private System.Windows.Forms.Button btnDashboardTicket;
         private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button btnAgentLogout;
+        private System.Windows.Forms.Button btnAgentHome;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Button button5;
@@ -663,15 +666,15 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Label SolvedTicket;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lblSolvedTicket;
+        private System.Windows.Forms.Label lblClosed;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnProfilePic;
-        private System.Windows.Forms.Label OpenTicket;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblOpenTicket;
+        private System.Windows.Forms.Label lblOpen;
         private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Label EscalatedTicket;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblEscalatedTicket;
+        private System.Windows.Forms.Label lblEscalated;
         private System.Windows.Forms.Panel panel6;
     }
 }
